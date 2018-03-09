@@ -5,12 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/fonts/fonts.css">
 <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<header class="main-header">
 		<div class="container">
 			<div class="search-title">
-				<h2>Search</h2>
+				<h2><span>Search</span> <button class="close" type="button">Close</button></h2>
+				
 			</div>
 		</div>	
 	</header>
@@ -62,25 +65,35 @@
 				</div>
 			</div>
 			<div class="filter-area">
-				<ul class="box-3">
-					<li>Select Business</li>
-					<li>
-						<form action="#">
-							<select>
-								<option>Select Document Type</option>
-								<option>Invoices & Receips: <strong>Accounts Payable</strong></option>
-								<option>Invoices & Receips: <strong>Accounts Receivable</strong></option>
-								<option>Invoices & Receips: <strong>Expense</strong></option>
-								<option>Invoices & Receips: <strong>Asset Purchase</strong></option>
-								<option>Invoices & Receips: <strong>Asset Sale</strong></option>
-								<option>Invoices & Receips: <strong>Petty Cash Slip</strong></option>
-							</select>
-						</form>
-					</li>
-					<li>Select Owner</li>
-				</ul>
-				<div class="add-button">
-					<button>+</button>
+				<div class="box-3">
+					<div class="box-item box-one">Select Business</div>
+					<div class="box-item box-two dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Document Type
+						<span class="caret"></span></button>
+						<ul class="dropdown-menu">
+						    <li><a href="#">Invoices & Receips: <strong>Accounts Payable</strong></a></li>
+							<li><a href="#">Invoices & Receips: <strong>Accounts Receivable</strong></a></li>
+							<li><a href="#">Invoices & Receips: <strong>Expense</strong></a></li>
+							<li><a href="#">Invoices & Receips: <strong>Asset Purchase</strong></a></li>
+							<li><a href="#">Invoices & Receips: <strong>Asset Sale</strong></a></li>
+							<li><a href="#">Invoices & Receips: <strong>Petty Cash Slip</strong></a></li>
+						</ul>
+					</div>					
+					<div class="box-item box-three">Select Owner</div>
+				</div>
+				<div class="add-button dropdown">
+					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"></button>
+					<ul class="dropdown-menu">
+						<li><a href="#">Added: <strong>Date</strong></a></li>
+						<li><a href="#">Amount: <strong>Range</strong></a></li>
+						<li><a href="#">Category: <strong>Matches</strong></a></li>
+						<li><a href="#">Date: <strong>Range</strong></a></li>
+						<li><a href="#">Expiration: <strong>Range</strong></a></li>
+						<li><a href="#">Invoice#: <strong>Text</strong></a></li>
+						<li><a href="#">Note: <strong>Contains</strong></a></li>
+						<li><a href="#">Owner: <strong>Name/Phone/Email</strong></a></li>
+						<li><a href="#">Payment: <strong>Paid/Unpaid</strong></a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
