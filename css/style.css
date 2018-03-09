@@ -41,7 +41,7 @@ a {
 }
 button.close{
 	float: right;
-	float: right;
+	margin-top: 10px;
     color: #9342FF;
     background-color: transparent;
     border: 0px;
@@ -174,7 +174,13 @@ li{
     width: 200px;
     border: 1px solid #ccc7c8;
     border-radius: 3px;
+}
+.box-3 .box-item input{
+    background:transparent;
+    border: 0px solid #ccc7c8;
     padding: 10px;
+	width: 100%;
+	text-align: left;
 }
 .box-3 .box-item:nth-child(2){
 	margin:0 40px;
@@ -188,8 +194,11 @@ li{
     width: 100%;
 	text-align: left;
 }
-.box-3{
+.box-3.firstone{
 	padding-left: 100px;
+}
+.box-3, .addbutton{
+	clear:both;
 }
 .filter-area {
 	width: 100%;
@@ -207,7 +216,7 @@ li{
     width: 100%;
 	border-bottom: 1px solid #bec8d0;
 }
-.add-button button {
+.add-button button.btn.btn-primary {
     background: url(../images/add.png)no-repeat;
     padding: 21px;
     border: 0px;
@@ -220,8 +229,22 @@ li{
     margin-top: 20px;
     float: left;
 	position: relative;
+	width: calc(100% - 120px);
 }
-
+div#awesome{
+	width: 100%;
+    padding-bottom: 20px;
+	float: left;
+}
+button#remove {
+    float: right;
+    background: transparent url(../images/close.png)no-repeat;
+    border: 0px;
+	position: relative;
+    top: 15px;
+	cursor:pointer;
+	padding: 10px;
+}
 .btn {
     display: inline-block;
     padding: 6px 12px;
@@ -273,7 +296,7 @@ li{
     -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
 }
-.dropdown-menu>li>a {
+.dropdown-menu>li>a, .add-button .dropdown-menu li {
     display: block;
     padding: 3px 20px;
     clear: both;
@@ -281,6 +304,7 @@ li{
     color: #657786;
     white-space: nowrap;
 	font-size: 15px;
+	cursor:pointer;
 }
 .btn .caret {
     margin-left: 0;

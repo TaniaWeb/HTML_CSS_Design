@@ -65,8 +65,8 @@
 				</div>
 			</div>
 			<div class="filter-area">
-				<div class="box-3">
-					<div class="box-item box-one">Select Business</div>
+				<div class="box-3 firstone">
+					<div class="box-item box-one"><input type="text" placeholder="Select Business" ></div>
 					<div class="box-item box-two dropdown">
 						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Document Type
 						<span class="caret"></span></button>
@@ -79,22 +79,84 @@
 							<li><a href="#">Invoices & Receips: <strong>Petty Cash Slip</strong></a></li>
 						</ul>
 					</div>					
-					<div class="box-item box-three">Select Owner</div>
+					<div class="box-item box-three"><input type="text" placeholder="Select Owner" ></div>
 				</div>
 				<div class="add-button dropdown">
-					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"></button>
-					<ul class="dropdown-menu">
-						<li><a href="#">Added: <strong>Date</strong></a></li>
-						<li><a href="#">Amount: <strong>Range</strong></a></li>
-						<li><a href="#">Category: <strong>Matches</strong></a></li>
-						<li><a href="#">Date: <strong>Range</strong></a></li>
-						<li><a href="#">Expiration: <strong>Range</strong></a></li>
-						<li><a href="#">Invoice#: <strong>Text</strong></a></li>
-						<li><a href="#">Note: <strong>Contains</strong></a></li>
-						<li><a href="#">Owner: <strong>Name/Phone/Email</strong></a></li>
-						<li><a href="#">Payment: <strong>Paid/Unpaid</strong></a></li>
-					</ul>
+					<div id="awesome" class="box-3" hidden>
+					  <div class="box-item box-one"><input type="text" placeholder="Select Business" ></div>
+					  <div class="box-item box-two"><input type="text" placeholder="Select Business1" ></div>
+					  <div class="box-item box-three"><input type="text" placeholder="Select Business1" ></div>
+					  <button id="remove"></button>
+					</div>
+					<div class="addbutton">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"></button>
+						<ul id="welcome" class="dropdown-menu">
+							<li id="droplist1">Added: <strong>Date</strong></li>
+							<li id="droplist2">Amount: <strong>Range</strong></a></li>
+							<li id="droplist3">Category: <strong>Matches</strong></a></li>
+							<li id="droplist4">Date: <strong>Range</strong></a></li>
+							<li id="droplist5">Expiration: <strong>Range</strong></a></li>
+							<li id="droplist6">Invoice#: <strong>Text</strong></a></li>
+							<li id="droplist7">Note: <strong>Contains</strong></a></li>
+							<li id="droplist8">Owner: <strong>Name/Phone/Email</strong></a></li>
+							<li id="droplist9">Payment: <strong>Paid/Unpaid</strong></a></li>
+						</ul>
+					</div>
 				</div>
+				
+				
+				<script>
+				document.getElementById("droplist1")
+						.addEventListener("click", function() {
+				  document.getElementById("welcome").hidden = true;
+				  document.getElementById("awesome").hidden = false;
+				}, false);
+				document.getElementById("droplist2")
+						.addEventListener("click", function() {
+				  document.getElementById("welcome").hidden = true;
+				  document.getElementById("awesome").hidden = false;
+				}, false);
+				document.getElementById("droplist3")
+						.addEventListener("click", function() {
+				  document.getElementById("welcome").hidden = true;
+				  document.getElementById("awesome").hidden = false;
+				}, false);
+				document.getElementById("droplist4")
+						.addEventListener("click", function() {
+				  document.getElementById("welcome").hidden = true;
+				  document.getElementById("awesome").hidden = false;
+				}, false);
+				document.getElementById("droplist5")
+						.addEventListener("click", function() {
+				  document.getElementById("welcome").hidden = true;
+				  document.getElementById("awesome").hidden = false;
+				}, false);
+				document.getElementById("droplist6")
+						.addEventListener("click", function() {
+				  document.getElementById("welcome").hidden = true;
+				  document.getElementById("awesome").hidden = false;
+				}, false);
+				document.getElementById("droplist7")
+						.addEventListener("click", function() {
+				  document.getElementById("welcome").hidden = true;
+				  document.getElementById("awesome").hidden = false;
+				}, false);
+				document.getElementById("droplist8")
+						.addEventListener("click", function() {
+				  document.getElementById("welcome").hidden = true;
+				  document.getElementById("awesome").hidden = false;
+				}, false);
+				document.getElementById("droplist9")
+						.addEventListener("click", function() {
+				  document.getElementById("welcome").hidden = true;
+				  document.getElementById("awesome").hidden = false;
+				}, false);
+				
+				document.getElementById("remove")
+						.addEventListener("click", function() {
+				  document.getElementById("awesome").hidden = true;
+				}, false);
+				</script>
 			</div>
 		</div>
 		<div class="inner-body" style="margin-top:20px;">
