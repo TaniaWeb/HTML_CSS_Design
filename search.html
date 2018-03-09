@@ -82,11 +82,17 @@
 					<div class="box-item box-three"><input type="text" placeholder="Select Owner" ></div>
 				</div>
 				<div class="add-button dropdown">
-					<div id="awesome" class="box-3" hidden>
-					  <div class="box-item box-one"><input type="text" placeholder="Select Business" ></div>
-					  <div class="box-item box-two"><input type="text" placeholder="Select Business1" ></div>
-					  <div class="box-item box-three"><input type="text" placeholder="Select Business1" ></div>
-					  <button id="remove"></button>
+					<div id="addrow1" class="box-3 addrow" hidden>
+					  <div class="box-item box-one"><input type="text" placeholder="Expires Between" ><span class="caret"></span></div>
+					  <div class="box-item box-two"><input type="date" value="2018-01-24"></div>
+					  <div class="and"> and</div>
+					  <div class="box-item box-three"><input type="date" value="2018-03-31" ></div>
+					  <button id="remove1" class="remove"></button>
+					</div>
+					<div id="addrow3" class="box-3 addrow" hidden>
+					  <div class="box-item box-one"><input type="text" placeholder="Category Matches" ><span class="caret"></span></div>
+					  <div class="box-item box-two"><input type="text" placeholder="Category Name" ></div>
+					  <button id="remove3" class="remove"></button>
 					</div>
 					<div class="addbutton">
 						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"></button>
@@ -103,58 +109,80 @@
 						</ul>
 					</div>
 				</div>
-				
-				
+								
 				<script>
 				document.getElementById("droplist1")
 						.addEventListener("click", function() {
-				  document.getElementById("welcome").hidden = true;
-				  document.getElementById("awesome").hidden = false;
+				  document.getElementById("addrow1").hidden = false;
 				}, false);
-				document.getElementById("droplist2")
+				/*document.getElementById("droplist2")
 						.addEventListener("click", function() {
-				  document.getElementById("welcome").hidden = true;
-				  document.getElementById("awesome").hidden = false;
-				}, false);
+				  document.getElementById("addrow2").hidden = false;
+				}, false);*/
 				document.getElementById("droplist3")
 						.addEventListener("click", function() {
-				  document.getElementById("welcome").hidden = true;
-				  document.getElementById("awesome").hidden = false;
+				  document.getElementById("addrow3").hidden = false;
 				}, false);
 				document.getElementById("droplist4")
 						.addEventListener("click", function() {
-				  document.getElementById("welcome").hidden = true;
-				  document.getElementById("awesome").hidden = false;
+				  document.getElementById("addrow4").hidden = false;
 				}, false);
 				document.getElementById("droplist5")
 						.addEventListener("click", function() {
-				  document.getElementById("welcome").hidden = true;
-				  document.getElementById("awesome").hidden = false;
+				  document.getElementById("addrow5").hidden = false;
 				}, false);
 				document.getElementById("droplist6")
 						.addEventListener("click", function() {
-				  document.getElementById("welcome").hidden = true;
-				  document.getElementById("awesome").hidden = false;
+				  document.getElementById("addrow6").hidden = false;
 				}, false);
 				document.getElementById("droplist7")
 						.addEventListener("click", function() {
-				  document.getElementById("welcome").hidden = true;
-				  document.getElementById("awesome").hidden = false;
+				  document.getElementById("addrow7").hidden = false;
 				}, false);
 				document.getElementById("droplist8")
 						.addEventListener("click", function() {
-				  document.getElementById("welcome").hidden = true;
-				  document.getElementById("awesome").hidden = false;
+				  document.getElementById("addrow8").hidden = false;
 				}, false);
 				document.getElementById("droplist9")
 						.addEventListener("click", function() {
-				  document.getElementById("welcome").hidden = true;
-				  document.getElementById("awesome").hidden = false;
+				  document.getElementById("addrow9").hidden = false;
 				}, false);
 				
-				document.getElementById("remove")
+				document.getElementById("remove1")
 						.addEventListener("click", function() {
-				  document.getElementById("awesome").hidden = true;
+				  document.getElementById("addrow1").hidden = true;
+				}, false);
+				/*document.getElementById("remove2")
+						.addEventListener("click", function() {
+				  document.getElementById("addrow2").hidden = true;
+				}, false);*/
+				document.getElementById("remove3")
+						.addEventListener("click", function() {
+				  document.getElementById("addrow3").hidden = true;
+				}, false);
+				document.getElementById("remove4")
+						.addEventListener("click", function() {
+				  document.getElementById("addrow4").hidden = true;
+				}, false);
+				document.getElementById("remove5")
+						.addEventListener("click", function() {
+				  document.getElementById("addrow5").hidden = true;
+				}, false);
+				document.getElementById("remove6")
+						.addEventListener("click", function() {
+				  document.getElementById("addrow6").hidden = true;
+				}, false);
+				document.getElementById("remove7")
+						.addEventListener("click", function() {
+				  document.getElementById("addrow7").hidden = true;
+				}, false);
+				document.getElementById("remove8")
+						.addEventListener("click", function() {
+				  document.getElementById("addrow8").hidden = true;
+				}, false);
+				document.getElementById("remove9")
+						.addEventListener("click", function() {
+				  document.getElementById("addrow9").hidden = true;
 				}, false);
 				</script>
 			</div>
@@ -164,41 +192,71 @@
 			  <tr>
 				<th>Business</th>
 				<th>Document Type</th> 
+				<th>Owners</th> 
+				<th>Contains</th> 
+				<th>Expiration Date</th> 
 			  </tr>
 			  <tr>
 				<td>&nbsp;</td> 
+				<td>&nbsp;</td>
+				<td>&nbsp;</td> 
+				<td>&nbsp;</td>
 				<td>&nbsp;</td>
 			  </tr>
 			  <tr>
 				<td>&nbsp;</td> 
 				<td>&nbsp;</td>
-			  </tr>
-			  <tr>
 				<td>&nbsp;</td> 
+				<td>&nbsp;</td>
 				<td>&nbsp;</td>
 			  </tr>
 			  <tr>
 				<td>&nbsp;</td> 
 				<td>&nbsp;</td>
-			  </tr>
-			  <tr>
 				<td>&nbsp;</td> 
+				<td>&nbsp;</td>
 				<td>&nbsp;</td>
 			  </tr>
 			  <tr>
 				<td>&nbsp;</td> 
 				<td>&nbsp;</td>
-			  </tr>
-			  <tr>
 				<td>&nbsp;</td> 
+				<td>&nbsp;</td>
 				<td>&nbsp;</td>
 			  </tr>
 			  <tr>
 				<td>&nbsp;</td> 
 				<td>&nbsp;</td>
+				<td>&nbsp;</td> 
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
 			  </tr>
 			  <tr>
 				<td>&nbsp;</td> 
+				<td>&nbsp;</td>
+				<td>&nbsp;</td> 
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			  </tr>
+			  <tr>
+				<td>&nbsp;</td> 
+				<td>&nbsp;</td>
+				<td>&nbsp;</td> 
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			  </tr>
+			  <tr>
+				<td>&nbsp;</td> 
+				<td>&nbsp;</td>
+				<td>&nbsp;</td> 
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			  </tr>
+			  <tr>
+				<td>&nbsp;</td> 
+				<td>&nbsp;</td>
+				<td>&nbsp;</td> 
+				<td>&nbsp;</td>
 				<td>&nbsp;</td>
 			  </tr>
 			</table>

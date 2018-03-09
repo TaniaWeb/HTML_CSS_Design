@@ -205,7 +205,7 @@ li{
     display: inline-block;
 	padding-top: 32px;
 }
-.inner-body table th{
+.inner-body table th, .inner-body table td{
 	width:14.28%;
 	float:left;
 	color:#423c3e;
@@ -231,12 +231,12 @@ li{
 	position: relative;
 	width: calc(100% - 120px);
 }
-div#awesome{
+div.addrow{
 	width: 100%;
     padding-bottom: 20px;
 	float: left;
 }
-button#remove {
+button.remove {
     float: right;
     background: transparent url(../images/close.png)no-repeat;
     border: 0px;
@@ -244,6 +244,7 @@ button#remove {
     top: 15px;
 	cursor:pointer;
 	padding: 10px;
+	right: 80px;
 }
 .btn {
     display: inline-block;
@@ -324,3 +325,36 @@ button#remove {
     vertical-align: middle;
     float: right;
 }
+.box-3 .box-item input[type="date"] {
+    width: 90%;
+	color:#657786;
+	padding: 8px 10px;
+}
+#addrow1.box-3 .box-item:nth-child(2){
+	margin-left:40px;
+	margin-right:0px;
+}
+#addrow1.box-3 .box-item.box-two, #addrow1.box-3 .box-item.box-three {
+	width:170px;
+}
+.and{
+	width: 100px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+}
+#addrow3 .box-item.box-two{
+	width:442px;
+}
+.addrow span.caret {
+    position: absolute;
+    right: 10px;
+    top: 17px;
+}
+.addrow .box-item {
+    position: relative;
+}
+
+
+
+
