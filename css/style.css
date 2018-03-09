@@ -68,7 +68,7 @@ button.close{
 }
 .main-title form select{
 	border: 0px;
-    background: transparent url('../images/down-arrow.png')no-repeat;
+    background: transparent url('../images/down-arrow.svg')no-repeat;
 	background-position: right center;
     padding-right: 22px;
 	-moz-appearance:none; /* Firefox */
@@ -77,6 +77,32 @@ button.close{
 	font-size: 16px;
     font-family: "proxima_nova_ltsemibold";
     color: #5f616d;
+}
+.box-item.saved-searches.dropdown{
+	float: left;
+    top: 10px;
+    position: relative;
+}
+.box-item.saved-searches.dropdown .btn-primary{
+	width: 162px;
+    font-family: "proxima_nova_ltsemibold";
+    color: #657786;
+	font-size: 16px;
+}
+.box-item.saved-searches .btn .caret{
+	transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border: solid #657786;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3.5px;
+    vertical-align: middle;
+	top:5px;
+}
+.box-item.saved-searches .dropdown-menu{
+	padding: 2px 0;
+	//min-width: 230px;
+	margin: 5px 0 0;
 }
 .inner-body{
 	background-color:#fff;
@@ -118,29 +144,49 @@ button.close{
     display: inline-block;
     padding-bottom: 5px;
 }
-.tabs-header ul li a.active{
+.tabs-header ul li.active a, .tabs-header ul li:hover a{
 	color:#423c3e;
 	font-weight:bold;
 }
 .tabs-header ul li.personal{
-	background:url('../images/personal.png')no-repeat;
+	background:url('../images/personal.svg') no-repeat;
 	background-position:center 0px;
+    opacity:0.6;
+}
+.tabs-header ul li.personal.active, .tabs-header ul li.personal:hover{
+    opacity:1;
 }
 .tabs-header ul li.business{
-	background:url('../images/business.png')no-repeat;
+	background:url('../images/business.svg') no-repeat;
 	background-position:center 0px;
+    opacity:0.6;
+}
+.tabs-header ul li.business.active, .tabs-header ul li.business:hover{
+    opacity:1;
 }
 .tabs-header ul li.documents{
-	background:url('../images/documents.png')no-repeat;
+	background:url('../images/documents.svg') no-repeat;
 	background-position:center 0px;
+    opacity:0.6;
+}
+.tabs-header ul li.documents.active, .tabs-header ul li.documents:hover{
+	opacity:1;
 }
 .tabs-header ul li.transactions{
-	background:url('../images/transactions.png')no-repeat;
+	background:url('../images/transactions.svg') no-repeat;
 	background-position:center 0px;
+    opacity:0.6;
+}
+.tabs-header ul li.transactions.active, .tabs-header ul li.transactions:hover{
+	opacity:1;
 }
 .tabs-header ul li.chats{
-	background:url('../images/chats.png')no-repeat;
+	background:url('../images/chats.svg') no-repeat;
 	background-position:center 0px;
+    opacity:0.6;
+}
+.tabs-header ul li.chats.active, .tabs-header ul li.chats:hover{
+	opacity:1;
 }
 ul{
 	padding:0 0;
@@ -178,9 +224,10 @@ li{
 .box-3 .box-item input{
     background:transparent;
     border: 0px solid #ccc7c8;
-    padding: 10px;
-	width: 100%;
+    padding: 9px 10px;
+	width: 90%;
 	text-align: left;
+	font-size: 14px;
 }
 .box-3 .box-item:nth-child(2){
 	margin:0 40px;
@@ -217,7 +264,7 @@ li{
 	border-bottom: 1px solid #bec8d0;
 }
 .add-button button.btn.btn-primary {
-    background: url(../images/add.png)no-repeat;
+    background: url(../images/add.svg)no-repeat;
     padding: 21px;
     border: 0px;
     font-size: 0px;
@@ -238,7 +285,7 @@ div.addrow{
 }
 button.remove {
     float: right;
-    background: transparent url(../images/close.png)no-repeat;
+    background: transparent url(../images/close.svg)no-repeat;
     border: 0px;
 	position: relative;
     top: 15px;
@@ -268,12 +315,15 @@ button.remove {
     border-radius: 4px;
 }
 .btn-primary {
-    color: #fff;
-    background-color: #337ab7;
-    border-color: #2e6da4;
+    color: #657786;
+    background-color: transparent;
+    border-color: transparent;
+    text-align: left;
 }
 .open>.dropdown-menu {
     display: block;
+	opacity: 1;
+	max-height:350px;
 }
 .dropdown-menu {
     position: absolute;
@@ -296,6 +346,12 @@ button.remove {
     border-radius: 4px;
     -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	opacity:0;
+	-webkit-transition: max-height 1s ease;
+	-moz-transition: max-height 1s ease;
+	-ms-transition: max-height 1s ease;
+	-o-transition: max-height 1s ease;
+	transition: max-height 1s ease;
 }
 .dropdown-menu>li>a, .add-button .dropdown-menu li {
     display: block;
@@ -306,6 +362,9 @@ button.remove {
     white-space: nowrap;
 	font-size: 15px;
 	cursor:pointer;
+}
+.dropdown-menu>li:hover, .dropdown-menu li:hover{
+	background-color: #eeeeee;
 }
 .btn .caret {
     margin-left: 0;

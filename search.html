@@ -5,8 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/fonts/fonts.css">
 <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<header class="main-header">
@@ -21,11 +22,21 @@
 		<div class="container">
 			<div class="main-title">
 				<h2>Untitled Search</h2>
-				<form action="#" method="get">
+				<!--form action="#" method="get">
 					<select>
 					  <option value="Saved_Searches">Saved Searches</option>
 					</select>
-				</form>
+				</form-->
+				<div class="box-item saved-searches dropdown">
+					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Saved Searches
+					<span class="caret"></span></button>
+					<ul class="dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+						<li><a href="#">Saved <strong>Searches1</strong></a></li>
+						<li><a href="#">Saved <strong>Searches2</strong></a></li>
+						<li><a href="#">Saved <strong>Searches3</strong></a></li>
+						<li><a href="#">Saved <strong>Searches4</strong></a></li>
+					</ul>
+				</div>				
 			</div>
 		</div>
 	</div>
@@ -37,15 +48,15 @@
 						<li class="personal">
 							<a  href="#">Personal</a>
 						</li>
-						<li class="business">
-							<a  class="active"  href="#">Business</a>
+						<li class="business active">
+							<a href="#">Business</a>
 						</li>
 					</ul>
 				</div>
 				<div class="grid-two">
 				<ul>
-					<li class="documents">
-						<a  class="active" href="#">Documents</a>
+					<li class="documents active">
+						<a href="#">Documents</a>
 					</li>
 					<li class="transactions">
 						<a  href="#">Transactions</a>
@@ -84,9 +95,9 @@
 				<div class="add-button dropdown">
 					<div id="addrow1" class="box-3 addrow" hidden>
 					  <div class="box-item box-one"><input type="text" placeholder="Expires Between" ><span class="caret"></span></div>
-					  <div class="box-item box-two"><input type="date" value="2018-01-24"></div>
+					  <div class="box-item box-two"><input type="text" placeholder="Jan 24, 2018"><span class="caret"></span></div>
 					  <div class="and"> and</div>
-					  <div class="box-item box-three"><input type="date" value="2018-03-31" ></div>
+					  <div class="box-item box-three"><input type="text" placeholder="Mar 31, 2018" ><span class="caret"></span></div>
 					  <button id="remove1" class="remove"></button>
 					</div>
 					<div id="addrow3" class="box-3 addrow" hidden>
@@ -110,81 +121,7 @@
 					</div>
 				</div>
 								
-				<script>
-				document.getElementById("droplist1")
-						.addEventListener("click", function() {
-				  document.getElementById("addrow1").hidden = false;
-				}, false);
-				/*document.getElementById("droplist2")
-						.addEventListener("click", function() {
-				  document.getElementById("addrow2").hidden = false;
-				}, false);*/
-				document.getElementById("droplist3")
-						.addEventListener("click", function() {
-				  document.getElementById("addrow3").hidden = false;
-				}, false);
-				document.getElementById("droplist4")
-						.addEventListener("click", function() {
-				  document.getElementById("addrow4").hidden = false;
-				}, false);
-				document.getElementById("droplist5")
-						.addEventListener("click", function() {
-				  document.getElementById("addrow5").hidden = false;
-				}, false);
-				document.getElementById("droplist6")
-						.addEventListener("click", function() {
-				  document.getElementById("addrow6").hidden = false;
-				}, false);
-				document.getElementById("droplist7")
-						.addEventListener("click", function() {
-				  document.getElementById("addrow7").hidden = false;
-				}, false);
-				document.getElementById("droplist8")
-						.addEventListener("click", function() {
-				  document.getElementById("addrow8").hidden = false;
-				}, false);
-				document.getElementById("droplist9")
-						.addEventListener("click", function() {
-				  document.getElementById("addrow9").hidden = false;
-				}, false);
 				
-				document.getElementById("remove1")
-						.addEventListener("click", function() {
-				  document.getElementById("addrow1").hidden = true;
-				}, false);
-				/*document.getElementById("remove2")
-						.addEventListener("click", function() {
-				  document.getElementById("addrow2").hidden = true;
-				}, false);*/
-				document.getElementById("remove3")
-						.addEventListener("click", function() {
-				  document.getElementById("addrow3").hidden = true;
-				}, false);
-				document.getElementById("remove4")
-						.addEventListener("click", function() {
-				  document.getElementById("addrow4").hidden = true;
-				}, false);
-				document.getElementById("remove5")
-						.addEventListener("click", function() {
-				  document.getElementById("addrow5").hidden = true;
-				}, false);
-				document.getElementById("remove6")
-						.addEventListener("click", function() {
-				  document.getElementById("addrow6").hidden = true;
-				}, false);
-				document.getElementById("remove7")
-						.addEventListener("click", function() {
-				  document.getElementById("addrow7").hidden = true;
-				}, false);
-				document.getElementById("remove8")
-						.addEventListener("click", function() {
-				  document.getElementById("addrow8").hidden = true;
-				}, false);
-				document.getElementById("remove9")
-						.addEventListener("click", function() {
-				  document.getElementById("addrow9").hidden = true;
-				}, false);
-				</script>
 			</div>
 		</div>
 		<div class="inner-body" style="margin-top:20px;">
@@ -262,6 +199,94 @@
 			</table>
 		</div>
 	</div>
+<script>
+	document.getElementById("droplist1")
+			.addEventListener("click", function() {
+	  document.getElementById("addrow1").hidden = false;
+	}, false);
+	/*document.getElementById("droplist2")
+			.addEventListener("click", function() {
+	  document.getElementById("addrow2").hidden = false;
+	}, false);*/
+	document.getElementById("droplist3")
+			.addEventListener("click", function() {
+	  document.getElementById("addrow3").hidden = false;
+	}, false);
+	document.getElementById("droplist4")
+			.addEventListener("click", function() {
+	  document.getElementById("addrow4").hidden = false;
+	}, false);
+	document.getElementById("droplist5")
+			.addEventListener("click", function() {
+	  document.getElementById("addrow5").hidden = false;
+	}, false);
+	document.getElementById("droplist6")
+			.addEventListener("click", function() {
+	  document.getElementById("addrow6").hidden = false;
+	}, false);
+	document.getElementById("droplist7")
+			.addEventListener("click", function() {
+	  document.getElementById("addrow7").hidden = false;
+	}, false);
+	document.getElementById("droplist8")
+			.addEventListener("click", function() {
+	  document.getElementById("addrow8").hidden = false;
+	}, false);
+	document.getElementById("droplist9")
+			.addEventListener("click", function() {
+	  document.getElementById("addrow9").hidden = false;
+	}, false);
+	
+	document.getElementById("remove1")
+			.addEventListener("click", function() {
+	  document.getElementById("addrow1").hidden = true;
+	}, false);
+	/*document.getElementById("remove2")
+			.addEventListener("click", function() {
+	  document.getElementById("addrow2").hidden = true;
+	}, false);*/
+	document.getElementById("remove3")
+			.addEventListener("click", function() {
+	  document.getElementById("addrow3").hidden = true;
+	}, false);
+	document.getElementById("remove4")
+			.addEventListener("click", function() {
+	  document.getElementById("addrow4").hidden = true;
+	}, false);
+	document.getElementById("remove5")
+			.addEventListener("click", function() {
+	  document.getElementById("addrow5").hidden = true;
+	}, false);
+	document.getElementById("remove6")
+			.addEventListener("click", function() {
+	  document.getElementById("addrow6").hidden = true;
+	}, false);
+	document.getElementById("remove7")
+			.addEventListener("click", function() {
+	  document.getElementById("addrow7").hidden = true;
+	}, false);
+	document.getElementById("remove8")
+			.addEventListener("click", function() {
+	  document.getElementById("addrow8").hidden = true;
+	}, false);
+	document.getElementById("remove9")
+			.addEventListener("click", function() {
+	  document.getElementById("addrow9").hidden = true;
+	}, false);
+</script>
+<script>
+$('.dropdown-menu').addClass('invisible'); //FIRST TIME INVISIBLE
 
+// ADD SLIDEDOWN ANIMATION TO DROPDOWN-MENU 
+  $('.dropdown').on('show.bs.dropdown', function(e){
+    $('.dropdown-menu').removeClass('invisible');
+    $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+  });
+
+  // ADD SLIDEUP ANIMATION TO DROPDOWN-MENU 
+  $('.dropdown').on('hide.bs.dropdown', function(e){
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+  });
+</script>
 </body>
 </html>
