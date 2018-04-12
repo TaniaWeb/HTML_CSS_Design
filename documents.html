@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Documents</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/fonts/fonts.css">
+<link rel="stylesheet" href="css/document.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header class="main-header" style="background-color:transparent;">
+		<div class="container">
+			<div class="top-bar">
+				<div class="logo-left">
+					<a href="#">
+						<img alt="docyt" src="images/svgs/docyt-logo.svg" />
+					</a>
+				</div>
+				<div class="icons-right">
+					<ul>
+						<li class="search"><a href="search.html"></a></li>
+						<li class="message"><a href="#"></a></li>
+						<li class="cloud"><a href="#"></a></li>
+						<li class="review"><a href="#"></a></li>
+						<li class="notification"><a href="#"></a></li>
+						<li class="user-profile">
+							<a href="#">
+								<img alt="profile" src="images/profile.png" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="logo">
+				<a href="#">
+					<img alt="logo" src="images/svgs/logo.svg" />
+					<div class="logo-title">
+						<span>Business</span>
+						<h1>G&S Accountants</h1>
+					</div>
+				</a>
+			</div>
+		</div>	
+	</header>
+	<div class="inner-body">
+		<nav class="menu">
+			<div class="container">
+				<ul class="main-menu">
+					<li class="menu-items active">
+						<a href="document.html">Documents</a>
+					</li>
+					<li class="menu-items">
+						<a href="contracts.html">Contracts</a>
+					</li>
+					<li class="menu-items">
+						<a href="services.html">Services</a>
+					</li>
+					<li class="menu-items">
+						<div class="box-item clients dropdown">
+							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Clients
+							<span class="caret"></span></button>
+							<ul class="dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+								<li><a href="#">Business Clients (24)</a></li>
+								<li><a href="#">Individual Clients (134)</strong></a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="document-inner-body">
+			<div class="container">
+				<div class="grid-col-4">
+					<a href="#">
+						<div class="doc-icons invoice-recipients">
+							<img alt="Invoice & Recipients" src="images/svgs/Receipts_icon.svg" />
+							<h4>Invoice & Recipients </h4>
+						</div>
+						<h2>18</h2>
+					</a>
+				</div>
+				<div class="grid-col-4">
+					<a href="#">
+						<div class="doc-icons operations">
+							<img alt="Operations" src="images/svgs/Operations_icon.svg" />
+							<h4>Operations </h4>
+						</div>
+						<h2>209</h2>
+					</a>
+				</div>
+				<div class="grid-col-4">
+					<a href="#">
+						<div class="doc-icons certificates">
+							<img alt="Certificates" src="images/svgs/Certificates_icon.svg" />
+							<h4>Certificates </h4>
+						</div>
+						<h2>18</h2>
+					</a>
+				</div>
+				<div class="grid-col-4">
+					<a href="#">
+						<div class="doc-icons contracts">
+							<img alt="Contracts" src="images/svgs/Contracts_icon.svg" />
+							<h4>Contracts </h4>
+						</div>
+						<h2>11</h2>
+					</a>
+				</div>
+				<div class="grid-col-4">
+					<a href="#">
+						<div class="doc-icons financial">
+							<img alt="Financial" src="images/svgs/Financial_icon@2x.svg" />
+							<h4>Financial </h4>
+						</div>
+						<h2>27</h2>
+					</a>
+				</div>
+				<div class="grid-col-4">
+					<a href="#">
+						<div class="doc-icons passwords">
+							<img alt="Passwords" src="images/svgs/Passwords_icon@2x.svg" />
+							<h4>Passwords </h4>
+						</div>
+						<h2>18</h2>
+					</a>
+				</div>
+				<div class="grid-col-4">
+					<a href="#">
+						<div class="doc-icons taxes">
+							<img alt="Taxes" src="images/svgs/Business_Tax_Icon.svg" />
+							<h4>Taxes </h4>
+						</div>
+						<h2>209</h2>
+					</a>
+				</div>
+				<div class="grid-col-4">
+					<a href="#">
+						<div class="doc-icons claims">
+							<img alt="Claims" src="images/svgs/Insurance_icon@2x.svg" />
+							<h4>Claims </h4>
+						</div>
+						<h2>18</h2>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="contracts" class="tab-body">
+			<div class="container">
+				
+			</div>
+		</div>
+	</div>	
+<script>
+$('.dropdown-menu').addClass('invisible'); //FIRST TIME INVISIBLE
+
+// ADD SLIDEDOWN ANIMATION TO DROPDOWN-MENU 
+  $('.dropdown').on('show.bs.dropdown', function(e){
+    $('.dropdown-menu').removeClass('invisible');
+    $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+  });
+
+  // ADD SLIDEUP ANIMATION TO DROPDOWN-MENU 
+  $('.dropdown').on('hide.bs.dropdown', function(e){
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Search_Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40" rx="20"></rect>
+        <filter x="-21.2%" y="-16.2%" width="142.5%" height="142.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.870588235   0 0 0 0 0.870588235   0 0 0 0 0.870588235  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-Business---01-Documents" transform="translate(-1300.000000, -12.000000)">
+            <g id="Group-2" transform="translate(1305.000000, 15.000000)">
+                <g id="Search_Icon">
+                    <g id="AddFamily_Button_BG">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#9013FE" stroke-width="1" x="0.5" y="0.5" width="39" height="39" rx="19.5"></rect>
+                    </g>
+                    <g id="Fill-1181-+-Fill-1182" transform="translate(9.000000, 9.000000)" fill="#9342FF">
+                        <path d="M8.49987596,0.98744113 C6.49342595,0.98744113 4.60803771,1.76830048 3.18903498,3.18175475 C0.258744728,6.11837898 0.259737038,10.881621 3.18903498,13.8073725 C4.6070454,15.2307111 6.49342595,16.0115704 8.49987596,16.0115704 C10.506326,16.0115704 12.3927065,15.2307111 13.8117093,13.8073725 C16.7410072,10.881621 16.7410072,6.11837898 13.8117093,3.18175475 C12.3927065,1.76830048 10.5053337,0.98744113 8.49987596,0.98744113 L8.49987596,0.98744113 Z M8.49987596,17 C6.22847929,17 4.09203672,16.1114018 2.48647978,14.5091575 C-0.828826594,11.1890226 -0.828826594,5.80208152 2.48647978,2.49084249 C4.09203672,0.879702308 6.22748698,0 8.49987596,0 C10.7712726,0 12.9077152,0.879702308 14.5142645,2.49084249 C17.8285785,5.80208152 17.8285785,11.1890226 14.5142645,14.5091575 C12.9077152,16.1114018 10.7712726,17 8.49987596,17 L8.49987596,17 Z" id="Fill-1181"></path>
+                        <path d="M13.4514221,15.4075402 L19.839325,21.790083 C20.0717994,22.0267391 20.4770866,22.0267391 20.709561,21.790083 L20.7918528,21.7081242 C21.0325564,21.4735171 21.0325564,21.0831882 20.7908242,20.8373118 L14.4039499,14.454769 L13.4514221,15.4075402 L13.4514221,15.4075402 Z M20.274443,23 C19.8341817,23 19.421694,22.8258375 19.1110423,22.518492 L12,15.4075402 L14.4039499,13 L21.5191068,20.1201721 C22.1609831,20.7563774 22.1599544,21.8013523 21.5180782,22.4355087 L21.4357864,22.518492 C21.1261634,22.8258375 20.7136756,23 20.274443,23 L20.274443,23 Z" id="Fill-1182"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

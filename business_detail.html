@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Business Detail</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/fonts/fonts.css">
+<link rel="stylesheet" href="css/business.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://mozilla.github.io/pdf.js/build/pdf.js"></script>
+</head>
+<body>
+	<header class="main-header">
+		<div class="container">
+			<div class="chats-title">
+				<span>Invoices & Receipts &nbsp / &nbsp Accounts Payable &nbsp/ &nbsp</span>
+				<h2>Google Business</h2>
+				<a class="close" href="#">Close</a>
+			</div>
+			<div class="header-menu">
+				<nav class="menu">
+					<ul>
+						<li class="menu-items active">
+							<a href="./business_detail.html">Detail</a>
+						</li>
+						<li class="menu-items">
+							<a href="./business_doc_chats.html">Document chats</a>
+						</li>
+						<li class="menu-items">
+							<a href="./business_related_doc.html">Related Documents</a>
+						</li>
+						<li>
+							|
+						</li>
+					</ul>
+				</nav>
+				<div class="action-drop dropdown">
+					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Actions
+					<span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li><a href="#"><img src="">Share</a></li>
+						<li><a href="#">Export as PDF</a></li>
+						<li><a href="#">Move Document</a></li>
+						<li><a href="#"><img src="./images/TrashCan_icon@2x.png" /><span>Delete</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</header>
+	<div class="inner-body">
+		<div class="container">
+			<div class="content-inner-body">
+				<div class="container">
+					<canvas id="the-canvas"></canvas>
+				</div>
+			</div>	
+			<div class="right-sidebar">
+				<div class="container">
+					<div class="info-list">
+						<div>
+							<label>Name</label>
+							<input type="text" name="name" value="Federal Tax Return" />	
+						</div>
+						<div>
+							<label>Year</label>
+							<input type="text" name="name" value="2012" />	
+						</div>
+						<div>
+							<label>Gross Income</label>
+							<input type="text" name="name" value="$3,202" />	
+						</div>
+						<div>
+							<label>Federal Taxes</label>
+							<input type="text" name="name" value="$1,090" />
+							<span>+</span>
+						</div>
+					</div>
+					<div class="business-list">
+						<div class="header">
+							<img src="./images/Droplist_icon@2x.png" />
+							<span>Business</span>
+						</div>
+						<div class="list">
+							<ul>
+								<li>
+									<a>
+										<img src="./images/svgs/Avatar1.svg">
+										<span id="name">Katherine Eliott</span>	
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="owner-list">
+						<div class="header">
+							<img src="./images/Droplist_icon@2x.png" />
+							<span>Document Owners (2)</span>
+							<span class="add-list">+</span>
+						</div>
+						<div class="list">
+							<ul>
+								<li>
+									<a>
+										<img src="./images/svgs/Avatar1.svg">
+										<span id="name">Katherine Eliott</span>
+										<span id="owner-delete"><img src="./images/TrashCan_icon@2x.png"></span>
+									</a>
+								</li>
+								<li>
+									<a>
+										<img src="./images/svgs/Avatar1.svg">
+										<span id="name">Sugam Pandey</span>	
+										<span id="owner-delete"><img src="./images/TrashCan_icon@2x.png"></span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="share-list">
+						<div class="header">
+							<img src="./images/Droplist_icon@2x.png" />
+							<span>Document Shares (11)</span>
+							<span class="add-list">+</span>
+						</div>
+						<div class="list">
+							<ul>
+								<li>
+									<a>
+										<img src="./images/svgs/Avatar1.svg">
+										<span id="name">Katherine Eliott</span>	
+									</a>
+								</li>
+								<li>
+									<a>
+										<img src="./images/svgs/Avatar1.svg">
+										<span id="name">Sugam Pandey</span>	
+									</a>
+								</li>
+								<li>
+									<a>
+										<img src="./images/svgs/Avatar1.svg">
+										<span id="name">Katherine Eliott</span>	
+										<span id="expire-day">Expires in 17 days</span>
+										<span id="expire-clock"><img src="./images/svgs/Avatar1.svg"></span>
+									</a>
+								</li>
+								<li>
+									<a>
+										<img src="./images/svgs/Avatar1.svg">
+										<span id="name">Sugam Pandey</span>	
+										<span id="expire-day">Expires in 17 days</span>
+										<span id="expire-clock"><img src="./images/svgs/Avatar1.svg"></span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<script>
+		$('.dropdown-menu').addClass('invisible'); //FIRST TIME INVISIBLE
+
+		// ADD SLIDEDOWN ANIMATION TO DROPDOWN-MENU 
+		$('.dropdown').on('show.bs.dropdown', function(e){
+			$('.dropdown-menu').removeClass('invisible');
+			$(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+		});
+
+		// ADD SLIDEUP ANIMATION TO DROPDOWN-MENU 
+		$('.dropdown').on('hide.bs.dropdown', function(e){
+			$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+		});
+	</script>
+	<script type="text/javascript">
+		// If absolute URL from the remote server is provided, configure the CORS
+		// header on that server.
+		var url = 'http://cdn.mozilla.net/pdfjs/helloworld.pdf';
+
+		// Loaded via <script> tag, create shortcut to access PDF.js exports.
+		var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+		// The workerSrc property shall be specified.
+		pdfjsLib.GlobalWorkerOptions.workerSrc = 'http://mozilla.github.io/pdf.js/build/pdf.worker.js';
+
+		// Asynchronous download of PDF
+		var loadingTask = pdfjsLib.getDocument(url);
+		loadingTask.promise.then(function(pdf) {
+		  console.log('PDF loaded');
+		  
+		  // Fetch the first page
+		  var pageNumber = 1;
+		  pdf.getPage(pageNumber).then(function(page) {
+		    console.log('Page loaded');
+		    
+		    var scale = 1.5;
+		    var viewport = page.getViewport(scale);
+
+		    // Prepare canvas using PDF page dimensions
+		    var canvas = document.getElementById('the-canvas');
+		    var context = canvas.getContext('2d');
+		    canvas.height = viewport.height;
+		    canvas.width = viewport.width;
+
+		    // Render PDF page into canvas context
+		    var renderContext = {
+		      canvasContext: context,
+		      viewport: viewport
+		    };
+		    var renderTask = page.render(renderContext);
+		    renderTask.then(function () {
+		      console.log('Page rendered');
+		    });
+		  });
+		}, function (reason) {
+		  // PDF loading error
+		  console.error(reason);
+		});
+	</script>
+</body>
+</html>

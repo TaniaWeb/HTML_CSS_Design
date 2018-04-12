@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240px" height="200px" viewBox="0 0 240 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>User_Menu_BG</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,2.99263929 C0,1.33985025 1.34785514,1.54356968e-14 3.00550479,1.53166845e-14 L216.994495,-4.68227295e-17 C218.65439,-1.65996153e-16 220,1.34537458 220,2.99263929 L220,177.007361 C220,178.66015 218.652145,180 216.994495,180 L3.00550479,180 C1.34561033,180 0,178.654625 0,177.007361 L0,2.99263929 Z" id="path-1"></path>
+        <filter x="-6.4%" y="-7.8%" width="114.5%" height="117.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.843909439   0 0 0 0 0.843909439   0 0 0 0 0.843909439  0 0 0 0.681725543 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="UC64---Web-2.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-Business---04-Document-Detail" transform="translate(-1008.000000, -141.000000)">
+            <g id="Group-2" transform="translate(1016.000000, 149.000000)">
+                <g id="User_Menu_BG">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <path stroke="#EBEBEB" stroke-width="1" d="M0.5,2.99263929 L0.5,177.007361 C0.5,178.380053 1.62332945,179.5 3.00550479,179.5 L216.994495,179.5 C218.377314,179.5 219.5,178.382696 219.5,177.007361 L219.5,2.99263929 C219.5,1.6199471 218.376671,0.5 216.994495,0.5 L3.00550479,0.5 C1.62268577,0.5 0.5,1.61730351 0.5,2.99263929 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

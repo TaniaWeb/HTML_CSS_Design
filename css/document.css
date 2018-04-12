@@ -1,0 +1,356 @@
+body{
+	font-family:"Proxima Nova";
+	font-size:15px;
+	color:#657786;
+	margin:0 0;
+	background-color:#F9F9FB;
+	display: inline-block;
+    width: 100%;
+}
+h1, h2, h3, h4{
+	margin:0 0 20px;
+}
+p{
+	margin:0 0 20px;
+}
+:focus {
+	outline:none;
+}
+a:-webkit-any-link:active {
+    color:#657786;
+}
+a {
+    color:#657786;
+	text-decoration:none;
+}
+.main-header{
+	padding: 0 0;
+}
+.main-header .container{
+	max-width:1620px;
+	padding:0 30px 25px;
+	background-color:#fff;
+	border-bottom:1px solid #e3e4e8;
+	text-align:center;
+}
+.top-bar{
+	width:100%;
+	text-align: left;
+	display:inline-block;
+	clear:both;
+	padding-top:12px;
+}
+.document-inner-body.container{
+	max-width:1580px;
+}
+.container{
+	max-width:1400px;
+	padding:0 30px;
+	margin: 0 auto;
+}
+.logo-left{
+	float:left;
+	padding-top: 7px;
+}
+.icons-right{
+	float:right;
+	max-width:338px;
+}
+.icons-right ul{
+	margin:0 0;
+}
+.icons-right ul li a {
+    padding: 22px;
+    display: inline-block;
+}
+.icons-right ul li{
+	float:left;
+	margin: 0 6px;
+}
+.icons-right ul li.search{
+	background:url('../images/search-icon.png')no-repeat;
+	background-position: center center;
+}
+.icons-right ul li.search:hover{
+	background:url('../images/svgs/Search_Icon_Hover.svg')no-repeat;
+	background-position: center center;
+}
+.icons-right ul li.message{
+	background:url('../images/svgs/Messages_icon_unselected.svg')no-repeat;
+	background-position: center center;
+}
+.icons-right ul li.cloud{
+	background:url('../images/svgs/Cloud_icon_unselected.svg')no-repeat;
+	background-position: center center;
+}
+.icons-right ul li.review{
+	background:url('../images/svgs/Review_icon_unselected.svg')no-repeat;
+	background-position: center center;
+}
+.icons-right ul li.notification{
+	background:url('../images/svgs/Notification_icon_unselected.svg')no-repeat;
+	background-position: center center;
+}
+.icons-right ul li.user-profile a{
+	padding:0 0;
+}
+ul{
+	padding:0 0;
+}
+li{
+	list-style:none;
+}
+.logo {
+    max-width: 444px;
+    margin: 0 auto;
+    color: #323339;
+    display: inline-block;
+	margin-top: -10px;
+}
+.logo img{
+	float: left;
+}	
+.logo-title {
+    float: left;
+    text-align: left;
+    padding: 7px 0 0 15px;
+}
+.logo-title span{
+	text-transform:uppercase;
+	font-size:12px;
+	font-family:"proxima_nova_altbold";
+	color:#323339;
+}
+.logo-title h1 {
+    font-size: 44px;
+    font-family: "proxima_nova_ltthin";
+    font-weight: 400;
+	color:#323339;
+}
+nav.menu{
+	display: inline-block;
+    text-align: center;
+	width: 100%;
+}
+nav.menu li {
+    display: inline-block;
+	padding: 0 17px;
+}
+nav.menu li a{
+	padding:10px 0 20px 0;
+	font-family:"proxima_nova_ltsemibold";
+	text-transform:uppercase;
+	font-size:14px;
+	color:#9294a0;
+	display:inline-block;
+}
+nav.menu li.active a, nav.menu li a:hover{
+	border-bottom:2px solid #662ea6;
+	color:#662ea6;
+}
+nav.menu li .clients.dropdown li{
+	padding: 0 10px;
+}
+nav.menu li .clients.dropdown li a{
+	padding:10px 0 0px 0;
+	font-family:"Proxima Nova";
+	text-transform:capitalize;
+	font-size:15px;
+	color:#657786;
+	display:inline-block;
+}
+nav.menu li .clients.dropdown li:hover{
+	background:transparent;
+}
+nav.menu li .clients.dropdown li a:hover{
+	background:transparent;
+	border-bottom:0px solid #662ea6;
+}
+.box-item.clients.dropdown{
+	position:relative;
+}
+.box-item.clients.dropdown button{
+	padding: 10px 10px 10px 0;
+    font-family: "proxima_nova_ltsemibold";
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #9294a0;
+    display: inline-block;
+}
+.box-item.clients.dropdown .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    border-top: 7px dashed;
+    border-top: 7px solid\9;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    vertical-align: middle;
+    float: right;
+	margin-left: 0;
+    float: right;
+    position: relative;
+    top: 8px;
+    right: -10px;
+}
+.box-item.clients.dropdown .dropdown-menu {
+	min-width: 220px;
+    margin-top: 0;
+	border: 0px;
+	padding: 7px 0 25px;
+}
+
+.document-inner-body{
+	width:100%;
+	display:inline-block;
+	clear:both;
+	text-align:center;
+	color:#323339;
+	padding-top: 60px;
+	height: 200vh;
+}
+.document-inner-body a:focus{
+	color:#323339;
+}
+.document-inner-body a{
+	color:#323339;
+}
+.document-inner-body .grid-col-4 {
+    width: 22.22%;
+    background-color: #fff;
+	border:1px solid #e3e4e8;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 15px 30px;
+    padding-top:0px;
+    padding-bottom: 8px;
+}
+.document-inner-body .grid-col-4 {
+    vertical-align: top;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.document-inner-body .grid-col-4:hover {
+    box-shadow: 0px 0px 8px #bec8d0;
+    position: relative;
+    //top: -8px;
+    //padding-bottom: 8px;
+	 -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+.doc-icons{
+	padding-top: 24px;
+	padding-bottom: 16px;
+} 
+.doc-icons img{
+	margin-bottom: 5px;
+}    
+.document-inner-body .grid-col-4 h2 {
+    display: inline-block;
+    margin-bottom: 64px;
+    font-size: 42px;
+    font-family: "proxima_nova_ltthin";
+    font-weight: 400;
+}
+.document-inner-body .grid-col-4 a {
+    display: inline-block;
+    width: 100%;
+}
+
+/*==============dropdown===============*/
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn-primary {
+    color: #657786;
+    background-color: transparent;
+    border-color: transparent;
+    text-align: left;
+}
+.open>.dropdown-menu {
+    display: block;
+	opacity: 1;
+	max-height:350px;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 330px;
+    padding: 15px 0;
+    margin: 20px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	opacity:0;
+	-webkit-transition: max-height 1s ease;
+	-moz-transition: max-height 1s ease;
+	-ms-transition: max-height 1s ease;
+	-o-transition: max-height 1s ease;
+	transition: max-height 1s ease;
+}
+.dropdown-menu>li>a, .add-button .dropdown-menu li {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    line-height: 30px;
+    color: #657786;
+    white-space: nowrap;
+	font-size: 15px;
+	cursor:pointer;
+}
+.dropdown-menu>li:hover, .dropdown-menu li:hover{
+	background-color: #eeeeee;
+}
+
+/*===================End Drop Down================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

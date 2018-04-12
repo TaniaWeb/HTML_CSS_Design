@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1253px" height="50px" viewBox="0 0 1253 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Message_Textbox</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="1" width="1253" height="50" rx="5"></rect>
+    </defs>
+    <g id="UC64---Web-2.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-Business---04-Document-Chat" transform="translate(-23.000000, -1606.000000)">
+            <g id="Group-7" transform="translate(22.000000, 282.000000)">
+                <g id="Group-6" transform="translate(1.000000, 1323.000000)">
+                    <g id="Message_Textbox">
+                        <use fill="#FCFCFC" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#CCCACA" stroke-width="1" x="0.5" y="1.5" width="1252" height="49" rx="5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
